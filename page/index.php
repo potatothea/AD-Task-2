@@ -83,5 +83,49 @@ function renderChecklist($items){
         ?>
        </div>
     </div>
+
+    <!-- Hours of Sleep -->
+    <div class = "panel tracker">
+        <h2> Hours of Sleep</h2>
+    <div class = "icons">
+
+    <?php
+         echo "<label><input type = 'checkbox' >/🌙</label>";
+    ?>
+        <!-- Water Balance -->
+    <div class = "panel tracker">
+        <h2> Water Balance</h2>
+    <div class = "icons">
+
+    <?php 
+     $cups = 8;
+     while ($cups >0){
+        echo "<label><input type = 'checkbox'/>🥛</label>";
+        $cups--;
+     }
+     ?>
+      </div>
+    </div>
+
+     <!-- Mood -->
+     <div class = "panel mood">
+        <h2> MOOD</h2>
+    <div class = "mood-options">
+        <?php
+        $moods = [
+          "angry" => "😠",
+          "tired" => "😴",
+          "sad" => "😢",
+          "great" => "😃",
+          "funny" => "😂"
+        ];
+        foreach ($moods as $feeling => $emoji){
+            echo "<label><input type='radio' name='mood' value='$feeling'><span>$emoji</span> " . ucfirst($feeling) . "</label><br>";
+        }
+        ?>
+        </div>
+
+    </div>
+</div>
 </body>
 </html>
