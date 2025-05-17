@@ -56,6 +56,15 @@ function renderChecklist($items){
     <title>Thea's School Routine</title>
 </head>
 <body>
-    
+    <div class = "container">
+        <h1> School Routine </h1>
+    </div>
+    <div class ="date-picker">
+        DATE
+        <input type = "text" placeholder="MM/">/
+        <input type = "text" placeholder="DD/">/
+        <input type = "text" placeholder="YY/">
+        <div class="weekdays">S&nbsp;M&nbsp;T&nbsp;W&nbsp;T&nbsp;F&nbsp;S</div>
+    </div>
 </body>
 </html>
