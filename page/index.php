@@ -67,10 +67,21 @@ function renderChecklist($items){
         <div class="weekdays">S&nbsp;M&nbsp;T&nbsp;W&nbsp;T&nbsp;F&nbsp;S</div>
     </div>
 
+    <!-- Checklist -->
     <?php 
         echo renderChecklist($daily_task);
     ?>
 
-    
+    <!-- Workout -->
+    <div class="panel">
+    <h2> Workout</h2>
+    <div class="workout-options">
+        <?php
+        foreach($workout as $type => $icon){
+            echo "<label><input type='radio' name='work'> $type $icon</label>";
+        }
+        ?>
+       </div>
+    </div>
 </body>
 </html>
