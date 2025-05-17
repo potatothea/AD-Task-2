@@ -1,0 +1,127 @@
+:root{
+    --light-pink:#fdeff2;
+    --accent:#e8a1b7;
+    --text:#333;
+}
+*{box-sizing: border-box; margin:0; padding:0;}
+body{
+    background: var(--light-pink);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    padding: 20px;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    color: var(--accent);
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.date-picker{
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+
+}
+.date-picker input{
+    width: 50px;
+    border: 1px solid var(--accent);
+    background: transparent;
+    color: var(--text);
+    padding: 2px 4px;
+    margin: 0 4px;
+    text-align: center;
+}
+.weekdays{
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    margin-top: 6px;
+}
+.checklist{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 40px;
+    margin-bottom: 40px;
+}
+.checklist-item{
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.checklist-item input{
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--accent);
+}
+.panel{
+    border-top: 1px solid var(--accent);
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.panel h2{
+    font-size: 1rem;
+    margin-bottom: 12px;
+    text-align: left;
+}
+.workout-options{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+.workout-options label{
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.workout-options input{
+    margin-right: 6px;
+}
+.tracker{
+    margin-top: 20px;
+}
+.icons{
+    display: flex;
+    gap: 8px;
+}
+.icons label{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+.icons input{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    cursor: pointer;
+}
+.mood-options{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.mood-options label{
+    text-align: center;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.mood-options input{
+    display: none;
+}
+.mood-options span{
+    font-size: 1.6rem;
+    display: block;
+}
+.mood-options input:checked + span{
+    transform: scale(1.5);
+}
