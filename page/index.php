@@ -66,5 +66,11 @@ function renderChecklist($items){
         <input type = "text" placeholder="YY/">
         <div class="weekdays">S&nbsp;M&nbsp;T&nbsp;W&nbsp;T&nbsp;F&nbsp;S</div>
     </div>
+
+    <?php 
+        echo renderChecklist($daily_task);
+    ?>
+
+    
 </body>
 </html>
