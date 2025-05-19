@@ -10,9 +10,16 @@ body{
     color: var(--text);
     padding: 20px;
 }
-.container{
+.container {
     max-width: 800px;
     margin: 0 auto;
+}
+
+.header-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px; 
+    height: auto;
 }
 h1{
     text-align: center;
@@ -45,6 +52,7 @@ h1{
     grid-template-columns: repeat(2, 1fr);
     gap: 10px 40px;
     margin-bottom: 40px;
+    margin-left: 150px;
 }
 .checklist-item{
     display: flex;
@@ -61,33 +69,40 @@ h1{
     border-top: 1px solid var(--accent);
     padding: 20px 0;
     margin-bottom: 20px;
+    text-align: center;
 }
 .panel h2{
     font-size: 1rem;
     margin-bottom: 12px;
     text-align: left;
 }
-.workout-options{
+.workout-options, .mood-options, .icons {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 10px 20px;
 }
-.workout-options label{
+
+.workout-options label, .mood-options label {
     display: flex;
     align-items: center;
     font-size: 0.9rem;
 }
-.workout-options input{
+
+.workout-options input {
     margin-right: 6px;
 }
-.tracker{
+
+.tracker {
     margin-top: 20px;
 }
-.icons{
+
+.icons {
     display: flex;
     gap: 8px;
 }
-.icons label{
+
+.icons label {
     position: relative;
     display: flex;
     align-items: center;
@@ -97,7 +112,8 @@ h1{
     border-radius: 4px;
     font-size: 1.1rem;
 }
-.icons input{
+
+.icons input {
     position: absolute;
     opacity: 0;
     width: 100%;
@@ -105,23 +121,56 @@ h1{
     margin: 0;
     cursor: pointer;
 }
-.mood-options{
-    display: flex;
+
+.mood-options {
     justify-content: space-between;
     margin-top: 20px;
 }
-.mood-options label{
+
+.mood-options label {
     text-align: center;
     font-size: 0.8rem;
     cursor: pointer;
 }
-.mood-options input{
+
+.mood-options input {
     display: none;
 }
-.mood-options span{
+
+.mood-options span {
     font-size: 1.6rem;
     display: block;
 }
-.mood-options input:checked + span{
+
+.mood-options input:checked + span {
     transform: scale(1.5);
+}
+.back-button {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.back-button button {
+    font-size: 1rem;
+    padding: 8px 16px;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.back-button button:hover {
+    background-color: darken(var(--accent), 10%);
+}
+
+.back-button button:focus {
+    outline: none;
+}
+
+.back-button button:after {
+    margin-right: 8px;
+    font-size: 1.2rem;
 }

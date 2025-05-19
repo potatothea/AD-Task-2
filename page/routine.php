@@ -54,11 +54,13 @@ function renderChecklist($items){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thea's School Routine</title>
-    <link rel = "stylesheet" href = "./assets/css/style.css">
+    <link rel = "stylesheet" href = "/page/assets/css/style.css">
 </head>
 <body>
-    <div class = "container">
-        <h1> School Routine </h1>
+    <div class="container">
+    <img src="./assets/img/schoolroutinetext.png" alt="School Routine" class="header-image">
+</div>
+
     </div>
     <div class ="date-picker">
         DATE
@@ -85,14 +87,7 @@ function renderChecklist($items){
        </div>
     </div>
 
-    <!-- Hours of Sleep -->
-    <div class = "panel tracker">
-        <h2> Hours of Sleep</h2>
-    <div class = "icons">
 
-    <?php
-         echo "<label><input type = 'checkbox' >/🌙</label>";
-    ?>
         <!-- Water Balance -->
     <div class = "panel tracker">
         <h2> Water Balance</h2>
@@ -125,8 +120,12 @@ function renderChecklist($items){
         }
         ?>
         </div>
-
     </div>
+
+    <div class="back-button">
+        <button onclick="history.back()">&larr; Back</button>
+    </div>
+</div>
 </div>
 </body>
 </html>

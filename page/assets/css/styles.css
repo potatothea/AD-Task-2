@@ -49,7 +49,7 @@
 
     .image-section {
       position: relative;
-      margin-top: 80px;
+  
     }
 
     .image-section img {
@@ -92,3 +92,5 @@
       color: white;
       font-size: 14px;
     }
+
+    
