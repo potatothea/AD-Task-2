@@ -1,0 +1,16 @@
+{
+    "name": "user/ad-task-2-1",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "User\\AdTask21\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "potatothea",
+            "email": "202310621@fit.edu.ph"
+        }
+    ],
+    "require": {}
+}
