@@ -7,7 +7,7 @@
     <link rel = "stylesheet" href ="./page/assets/css/css/styles.css">
 </head>
 <body>
-    <nav>
+   <nav>
     <div class="logo">MyRoutine</div>
     <ul>
       <li><a href="#">Home</a></li>
@@ -16,7 +16,7 @@
   </nav>
 
   <div class="image-section">
-    <img src="home.png" alt="School Routine" />
+    <img src=/page/assets/img/"home.png" alt="School Routine" />
     <div class="button-overlay">
       <a href="routine.php" class="arrow-button">View Routine</a>
     </div>

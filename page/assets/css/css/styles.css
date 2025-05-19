@@ -1,7 +1,7 @@
-  * {
-      box-sizing: border-box;
+ * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
@@ -11,10 +11,9 @@
       min-height: 100vh;
     }
 
-    /* NAVBAR */
     nav {
       width: 100%;
-      background-color: rgba(255, 182, 193, 0.9);
+      background-color: #ffb6c1;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -27,7 +26,7 @@
 
     nav .logo {
       font-size: 24px;
-      color: #fff;
+      color: white;
       font-weight: bold;
     }
 
@@ -39,7 +38,7 @@
 
     nav ul li a {
       text-decoration: none;
-      color: #fff;
+      color: white;
       font-size: 16px;
       transition: color 0.3s ease;
     }
@@ -48,10 +47,9 @@
       color: #ff69b4;
     }
 
-    /* IMAGE SECTION */
     .image-section {
       position: relative;
-      margin-top: 80px; /* space for navbar */
+      margin-top: 80px;
     }
 
     .image-section img {
@@ -62,8 +60,8 @@
 
     .button-overlay {
       position: absolute;
-      bottom: 40px;
-      right: 60px;
+      right: 50px;
+      bottom: 50px;
     }
 
     .arrow-button {
@@ -87,12 +85,10 @@
       margin-left: 10px;
     }
 
-    /* FOOTER */
     footer {
-      background-color: rgba(255, 182, 193, 0.9);
+      background-color: #ffb6c1;
       text-align: center;
       padding: 15px 0;
       color: white;
       font-size: 14px;
-      margin-top: auto;
     }
