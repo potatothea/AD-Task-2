@@ -64,8 +64,6 @@
 
 A programmer is developing a school routine website that utilizes arrays, dictionaries, functions, and code fragmentation to demonstrate proficiency in PHP, while also integrating Composer.
 
-
-
 ### Technology
 
 <!-- TODO: List of Technology Used -->
@@ -141,6 +139,4 @@ AD-Task-2
 | Title        | Purpose                                                                       | Link          |
 | ------------ | ----------------------------------------------------------------------------- | ------------- |
 | ChatGpt      | Ask for guidance with coding                                                  | https://chatgpt.com/ |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+
